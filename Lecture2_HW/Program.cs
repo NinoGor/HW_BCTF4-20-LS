@@ -37,7 +37,7 @@
             // simartivistvis, tu ramdenimea maqsimaluri, rigit pirvels gamoitans
             string strLargest = (num1 >= num2 && num1 >= num3) ? "1-li" : (num2 >= num3) ? "me-2" : "me-3";
 
-            Console.WriteLine(strLargest + "ricxvi maqsimaluria warmodgenil ricxvebs shoris.");
+            Console.WriteLine(strLargest + " ricxvi maqsimaluria warmodgenil ricxvebs shoris.");
             #endregion
 
             #region Davaleba 3

@@ -72,7 +72,7 @@
             {
                 Console.Write("Enter a passcode of 4 digits: ");
                 input = Console.ReadLine();
-            } while (input.Length != 4 || !int.TryParse(input, out _));
+            } while (!int.TryParse(input, out _) || input.Length != 4 );
             Console.WriteLine();
 
             bool isCorrect = false;
@@ -143,12 +143,11 @@
                 // სავარჯიშოდ იყოს for ციკლი foreach-ის ნაცვლად
                 for (int i = 0; i < strArr.Length; i++)
                 {
-                    string currentStr = strArr[i];
                     // სტრინგის სიმბოლოების მკაცრად სათითაოდ ბეჭდვა, რადგან პირობა ასე ითხოვს
-                    for (int j = 0; j < currentStr.Length; j++)
+                    for (int j = 0; j < strArr[i].Length; j++)
                     {
                         // უკეთ საჩვენებლად სფეისებს დავამატებ
-                        Console.Write($"{currentStr[j]} ");
+                        Console.Write($"{strArr[i][j]} ");
                     }
                     // თუ გვინდა ახალი სტრინგი ახალ ხაზზე დაიწყოს
                     Console.WriteLine(); 

@@ -1,0 +1,10 @@
+Toyota,Corolla,2022,25000,White
+BMW,M5,2023,105000,Black
+Mercedes,E300,2021,55000,Silver
+Audi,A6,2022,60000,Gray
+Ford,Mustang,2020,38000,Red
+Honda,Civic,2021,23000,Blue
+Hyundai,Elantra,2023,22000,FluidMetal
+Porsche,911,2024,120000,Yellow
+Tesla,Model3,2023,40000,White
+Nissan,GT-R,2022,115000,MidnightPurple

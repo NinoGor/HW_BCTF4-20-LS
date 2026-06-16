@@ -1,0 +1,10 @@
+Giorgi,Beridze,25,g.beridze@email.com,599123456,90
+Nino,Kapanadze,31,nino.k@email.com,555987654,85
+Luka,Makharadze,19,luka.maxa@email.com,577321654,96
+Ani,Dolidze,28,ani.doli@email.com,591456789,50
+Davit,Japaridze,42,d.japaridze@email.com,551112233,65
+Mariam,Chkheidze,22,m.chkheidze@email.com,598778899,75
+Irakli,Gelashvili,35,i.gelashvili@email.com,595334455,86
+Elene,Kvaratskhelia,27,elene.kvarats@email.com,574665544,85
+Alex,Meskhi,30,a.meskhi@email.com,593221100,63
+Sopo,Tsiklauri,24,sopho.tsik@email.com,568445566,72

@@ -1,0 +1,3 @@
+-> Logger activated: 6/19/2026 8:30:01 PM
+Deleted student with email: ani.doli@email.com.
+-> Logger disposed: 6/19/2026 8:30:15 PM

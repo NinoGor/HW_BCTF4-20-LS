@@ -10,7 +10,7 @@ namespace Lecture13_HW
             try
             {
                 // ყოველ ჯერზე მოხდება overwrite, თუ append გვინდა true უნდა დავამატოთ არგუმენტად
-                writer = new StreamWriter(@"..\..\log.txt");
+                writer = new StreamWriter(@"..\..\..\log.txt");
                 writer.WriteLine($"-> Logger activated: {DateTime.Now}");
                 // პირდაპირ რო ფაილში გადაიტანოს
                 writer.Flush();

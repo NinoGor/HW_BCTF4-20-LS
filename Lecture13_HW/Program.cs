@@ -62,7 +62,7 @@
                         case "6": AddNewStudent(logger); break;
                         case "7": DeleteStudent(logger); break;
                         case "8": return; // დასრულდება პროგრამა
-                        default: Console.WriteLine("Error: input must be in range [1-8]! Try Again..."); break;
+                        default: Console.WriteLine("Error: input must be in range [1-8]!"); break;
                     }
 
 
@@ -192,7 +192,7 @@
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message} Try again...");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -207,7 +207,7 @@
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"❌ {ex.Message} სცადეთ თავიდან.");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -216,13 +216,13 @@
             {
                 try
                 {
-                    Console.Write("ასაკი (17-120): ");
+                    Console.Write("Enter age (17-120): ");
                     tempStudent.Age = int.Parse(Console.ReadLine() ?? string.Empty);
                     break;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message} Try again...");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -237,7 +237,7 @@
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message} Try again...");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -252,7 +252,7 @@
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message} Try again...");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -267,7 +267,7 @@
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message} Try again...");
+                    Console.WriteLine($"{ex.Message}");
                 }
             }
 
@@ -283,7 +283,7 @@
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine($"Invalid faculty! Try again...");
+                    Console.WriteLine($"Invalid faculty!");
                 }
             }
 
@@ -305,6 +305,11 @@
 
         static void DeleteStudent(Logger logger)
         {
+            if (studentCount == 0)
+            {
+                Console.WriteLine("Students array is empty!");
+                return;
+            }
             Console.Write("Enter student email: ");
             string searchEmail = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
 

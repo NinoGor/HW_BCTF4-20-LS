@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Lecture28_HW/">
+    <Project Path="Lecture28_HW/UniversityApplication/UniversityApplication.csproj" Id="d7d6feac-b940-418f-8854-64c58f0a5d48" />
+    <Project Path="Lecture28_HW/UniversityDomain/UniversityDomain.csproj" Id="bd82d554-e40a-47fa-839f-e7deab6fc947" />
+    <Project Path="Lecture28_HW/UniversityInfrastucture/UniversityInfrastucture.csproj" Id="2352a2a8-cd6d-4872-9017-e12af836a9a0" />
+    <Project Path="Lecture28_HW/UniversityPresentation/UniversityPresentation.csproj" Id="ba53a5c2-3885-44ad-af0d-ce5ff595e386" />
+  </Folder>
   <Project Path="Lecture10_HW/Lecture10_HW.csproj" Id="a6f2ccbb-1739-4501-9b60-7ff5f1a871a9" />
   <Project Path="Lecture11_HW/Lecture11_HW.csproj" Id="190b9c61-6cec-4661-b333-90fba2844f3f" />
   <Project Path="Lecture12_HW/Lecture12_HW.csproj" Id="54527ef4-8335-4672-a630-20bdea16a197" />

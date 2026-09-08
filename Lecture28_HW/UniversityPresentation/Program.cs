@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.Extensions.Configuration;
+using System.Text;
 using UniversityApplication.Services;
 using UniversityDomain.Interfaces;
 using UniversityDomain.Models;
@@ -8,11 +9,15 @@ namespace UniversityPresentation
 {
     public class Program
     {
-        // private static readonly string _connectionString = "Server=LAPTOP-HE9JLDVE;Database=UNIVERSITY;Trusted_Connection=True; TrustServerCertificate=True;";
-        private static readonly string _connectionString = "Server=Nino;Database=UNIVERSITY;Trusted_Connection=True;TrustServerCertificate=True;";
-
         static void Main(string[] args)
         {
+            IConfiguration configuration = new ConfigurationBuilder()
+           .SetBasePath(AppContext.BaseDirectory)
+           .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+           .Build();
+
+            var _connectionString = configuration.GetConnectionString("DefaultConnection");
+
             Console.OutputEncoding = Encoding.UTF8;
 
             #region გაკვეთილზე გაკეთებული

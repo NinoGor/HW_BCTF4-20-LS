@@ -10,8 +10,8 @@ namespace Movies.Domain.Entities
     {
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100)]
+        //[Required]
+        //[MaxLength(100)]
         public string Name { get; set; }
 
         // FK

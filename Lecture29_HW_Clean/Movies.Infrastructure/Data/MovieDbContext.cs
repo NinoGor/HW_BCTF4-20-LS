@@ -95,7 +95,13 @@ namespace Movies.Infrastructure.Data
                 .IsRequired()
                 .HasMaxLength(100);
 
-
+            //seeding
+            modelBuilder.Entity<Country>()
+                .HasData(
+                    new Country { Id = 1, Name = "USA" },
+                    new Country { Id = 2, Name = "UK" },
+                    new Country { Id = 3, Name = "France" }
+                );
         }
 
     }

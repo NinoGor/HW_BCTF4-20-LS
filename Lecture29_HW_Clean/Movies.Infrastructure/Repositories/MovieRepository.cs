@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Movies.Domain.Entities;
 using Movies.Domain.Interfaces;
 using Movies.Infrastructure.Data;
 using System;
@@ -16,12 +17,12 @@ namespace Movies.Infrastructure.Repositories
             _movieDbContext = movieDbContext;
         }
 
-        public async Task AddMovieAsync(Domain.Entities.Movie movie)
+        public async Task AddMovieAsync(Movie movie)
         {
             await _movieDbContext.Movies.AddAsync(movie);
             await _movieDbContext.SaveChangesAsync();
         }
-        public async Task<ICollection<Domain.Entities.Movie>> GetAllMoviesAsync()
+        public async Task<ICollection<Movie>> GetAllMoviesAsync()
         {
             return await _movieDbContext.Movies
                 .Include(m => m.Studio)

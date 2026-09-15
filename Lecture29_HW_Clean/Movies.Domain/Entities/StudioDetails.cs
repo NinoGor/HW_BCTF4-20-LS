@@ -10,7 +10,7 @@ namespace Movies.Domain.Entities
     {
         public int Id { get; set; }
 
-        [Required]
+        //[Required]
         public string LicenseNumber { get; set; }
 
         // FK - კინოსტუდიის დეტალები ვერ იარსებებს კინოსტუდიის გარეშე, ამიტომ FK ამ მხარესაა

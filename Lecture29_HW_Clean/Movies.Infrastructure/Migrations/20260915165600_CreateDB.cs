@@ -2,6 +2,8 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Movies.Infrastructure.Migrations
 {
     /// <inheritdoc />
@@ -120,6 +122,16 @@ namespace Movies.Infrastructure.Migrations
                         principalTable: "Movies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Countries",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 1, "USA" },
+                    { 2, "UK" },
+                    { 3, "France" }
                 });
 
             migrationBuilder.CreateIndex(

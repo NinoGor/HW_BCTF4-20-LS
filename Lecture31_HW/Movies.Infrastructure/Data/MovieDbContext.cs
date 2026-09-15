@@ -63,7 +63,8 @@ namespace Movies.Infrastructure.Data
             modelBuilder.Entity<Studio>()
                 .HasMany(s => s.Movies)
                 .WithOne(m => m.Studio)
-                .HasForeignKey(m => m.StudioId);
+                .HasForeignKey(m => m.StudioId)
+                .OnDelete(DeleteBehavior.Restrict); // ფილმის წაშლისას კინოსტუდია არ იშლება
 
             // StudioDetails
             modelBuilder.Entity<StudioDetails>().HasKey(sd => sd.Id);

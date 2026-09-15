@@ -9,5 +9,8 @@ namespace Movies.Domain.Interfaces
     {
         Task<ICollection<Movie>> GetAllMoviesAsync();
         Task AddMovieAsync(Movie movie);
+        Task<Movie?> GetMovieByIdAsync(int id);
+        Task UpdateMovieAsync(Movie movie);
+        Task DeleteMovieAsync(Movie movie);
     }
 }

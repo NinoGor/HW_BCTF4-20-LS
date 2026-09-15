@@ -13,7 +13,7 @@ namespace Movies.Domain.DTOs
 
         public override string ToString()
         {
-            return $"MovieDTO: Id={Id}, Title={Title}, ReleaseYear={ReleaseYear}, StudioName={StudioName}";
+            return $"Id={Id}, Title={Title}, ReleaseYear={ReleaseYear}, StudioName={StudioName}";
         }
     }
 }

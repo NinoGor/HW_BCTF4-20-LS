@@ -5,11 +5,11 @@
     <Project Path="Lecture28_HW/UniversityInfrastucture/UniversityInfrastucture.csproj" Id="2352a2a8-cd6d-4872-9017-e12af836a9a0" />
     <Project Path="Lecture28_HW/UniversityPresentation/UniversityPresentation.csproj" Id="ba53a5c2-3885-44ad-af0d-ce5ff595e386" />
   </Folder>
-  <Folder Name="/Lecture29_HW_Clean/">
-    <Project Path="Lecture29_HW_Clean/Movies.Application/Movies.Service.csproj" Id="a9a1c221-d8c7-4337-be9d-435525cac5de" />
-    <Project Path="Lecture29_HW_Clean/Movies.Domain/Movies.Domain.csproj" Id="edf4fa40-1694-4d3c-b7df-9967bed68357" />
-    <Project Path="Lecture29_HW_Clean/Movies.Infrastructure/Movies.Infrastructure.csproj" Id="b379e5b2-e202-4579-a282-d84a997e215c" />
-    <Project Path="Lecture29_HW_Clean/Movies.UI/Movies.UI.csproj" Id="1d549d40-2f5f-44b5-9a94-b35565481ae9" />
+  <Folder Name="/Lecture31_HW/">
+    <Project Path="Lecture31_HW/Movies.Application/Movies.Service.csproj" Id="a9a1c221-d8c7-4337-be9d-435525cac5de" />
+    <Project Path="Lecture31_HW/Movies.Domain/Movies.Domain.csproj" Id="edf4fa40-1694-4d3c-b7df-9967bed68357" />
+    <Project Path="Lecture31_HW/Movies.Infrastructure/Movies.Infrastructure.csproj" Id="b379e5b2-e202-4579-a282-d84a997e215c" />
+    <Project Path="Lecture31_HW/Movies.UI/Movies.UI.csproj" Id="1d549d40-2f5f-44b5-9a94-b35565481ae9" />
   </Folder>
   <Project Path="Lecture10_HW/Lecture10_HW.csproj" Id="a6f2ccbb-1739-4501-9b60-7ff5f1a871a9" />
   <Project Path="Lecture11_HW/Lecture11_HW.csproj" Id="190b9c61-6cec-4661-b333-90fba2844f3f" />

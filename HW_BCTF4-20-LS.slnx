@@ -17,6 +17,14 @@
     <Project Path="Lecture32_HW/Movie.Service/Movie.Service.csproj" />
     <Project Path="Lecture32_HW/Movie.UI/Movie.UI.csproj" />
   </Folder>
+  <Folder Name="/Lecture34_HW/">
+    <Project Path="Lecture34_HW/Movie.Domain/Movie.Domain.csproj" />
+    <Project Path="Lecture34_HW/Movie.Infrastucture/Movie.Infrastucture.csproj" />
+    <Project Path="Lecture34_HW/Movie.Service/Movie.Service.csproj" />
+    <Project Path="Lecture34_HW/Movie.Test/Movie.Test.csproj" />
+    <Project Path="Lecture34_HW/Movie.UI/Movie.UI.csproj" />
+    <Project Path="Lecture34_HW/Movie.Web1/Movie.Web1.csproj" />
+  </Folder>
   <Project Path="Lecture10_HW/Lecture10_HW.csproj" Id="a6f2ccbb-1739-4501-9b60-7ff5f1a871a9" />
   <Project Path="Lecture11_HW/Lecture11_HW.csproj" Id="190b9c61-6cec-4661-b333-90fba2844f3f" />
   <Project Path="Lecture12_HW/Lecture12_HW.csproj" Id="54527ef4-8335-4672-a630-20bdea16a197" />

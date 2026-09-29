@@ -1,0 +1,85 @@
+﻿@page
+@model Movie.Web1.Pages.Movies.IndexModel
+
+<!-- Custom CSS კინოებისთვის -->
+<link rel="stylesheet" href="~/css/movies.css" />
+
+<div class="movies-page">
+    <div class="container">
+
+        <!-- heading -->
+        <h1 class="movies-title">Movies</h1>
+
+        <div class="row g-4">
+
+            @foreach (var movie in Model.Movies)
+            {
+                <!-- Bootstrap-ის რესპონსიული column -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <!-- movie card -->
+                    <div class="card movie-card">
+
+                        <div class="card-body p-4">
+
+                            <!--
+                                სათაურზე დაჭერისას გაიხსნება დეტალების გვერდი ამ ფილმისთვის
+                            -->
+                            <a class="movie-title"
+                               asp-area=""
+                               asp-page="/Movies/Details"
+                               asp-route-id="@movie.Id">
+                                @movie.Title
+                            </a>
+
+                            <div class="mt-4">
+
+                                <!-- გამოსვლის თარიღი -->
+                                <p class="movie-label">Release Year</p>
+                                <p class="movie-value">@movie.ReleaseYear</p>
+
+                                <!-- კინოსტუდია -->
+                                <p class="movie-label">Studio</p>
+                                <p class="movie-value">@movie.StudioName</p>
+
+                            </div>
+
+                            <!-- დამატებით დეტალების გვერდზე გადასასვლელი ლინკი -->
+                            <a class="btn btn-sm btn-outline-secondary"
+                               asp-area=""
+                               asp-page="/Movies/Details"
+                               asp-route-id="@movie.Id">
+                                See Details
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+    @* 
+        
+    პატარა ეკრანზე 1 კინო თითო სტრიქონში, საშუალო ზომის ეკრანზე 2, დიდ ეკრანზე 3 
+    
+    container — ქმნის ძირითად კონტეინერს, რომელიც ცენტრავს შიგთავსს და ამატებს padding-ს
+
+    row — ქმნის სტრიქონს grid-ში
+
+    col-12 — იკავებს row-ის სრულ სიგანეს (12-ვე სვეტს) ყველა ზომის ეკრანზე
+
+    col-md-6 — იკავებს ეკრანის ნახევარს (6 სვეტს) საშუალო ზომის და უფრო დიდ ეკრანებზე.
+
+    col-lg-4 — იკავებს ეკრანის მესამედს (4 სვეტს) დიდ ეკრანებზე (992px-ზე დიდ)
+
+    card — ქმნის მოქნილ "ბარათს"
+
+    card-body — ბარათის ძირითადი შიდა ნაწილია, რომელიც ამატებს padding-ს ტექსტისა და შიგთავსისთვის.
+
+    btn — ანიჭებს ელემენტს ღილაკის საბაზისო სტილებს *@
+</div>
+

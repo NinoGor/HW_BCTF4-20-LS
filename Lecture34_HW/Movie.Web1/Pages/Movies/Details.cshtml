@@ -1,0 +1,65 @@
+﻿@page
+@model Movie.Web1.Pages.Movies.DetailsModel
+
+<!-- Custom CSS for the Movies pages -->
+<link rel="stylesheet" href="~/css/movies.css" />
+
+<div class="movies-page">
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            @* 
+                პატარა ეკრანებზე სრული სიგანე (12/12 სვეტი)
+                საშუალო ეკრანებზე 8/12 სვეტი
+                დიდ ეკრანებზე ეკრანის ნახევარი 6/12 სვეტი
+            *@
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <div class="movie-details">
+
+                    <!-- heading -->
+                    <h1 class="movie-details-title">
+                        Movie Details
+                    </h1>
+
+                    <!-- Movie title -->
+                    <div class="movie-detail-item">
+                        <p class="movie-detail-label">Title</p>
+                        <p class="movie-detail-value">
+                            @Model.Movie.Title
+                        </p>
+                    </div>
+
+                    <!-- Release year -->
+                    <div class="movie-detail-item">
+                        <p class="movie-detail-label">Release Year</p>
+                        <p class="movie-detail-value">
+                            @Model.Movie.ReleaseYear
+                        </p>
+                    </div>
+
+                    <!-- Studio -->
+                    <div class="movie-detail-item">
+                        <p class="movie-detail-label">Studio</p>
+                        <p class="movie-detail-value">
+                            @Model.Movie.StudioName
+                        </p>
+                    </div>
+
+                    <!-- უკან დასაბრუნებელი ღილაკი -->
+                    <div class="mt-4">
+                        <a class="btn back-button"
+                           asp-page="/Movies/Index">
+                            &larr; Back to Movies
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
